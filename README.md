@@ -31,7 +31,7 @@ text_reponse varchar(255), primary key (reponse_id), foreign key (question_id) r
 
 Ensuite taper ceci dans votre navigateur: 
 
-``localhost/studyForm/``
+``localhost/StudyForm/``
 
 ## Routes
 
