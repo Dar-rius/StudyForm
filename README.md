@@ -7,7 +7,7 @@ et peuvent répondre aux questions dont ils ont la réponse sur les cours.
 
 Pour exécuter le site il vous faut xampp puis démarrer les serveurs Apache et Mysql.
 
-Connectez vous à mysql et taper les copier les commandes suivants:
+Connectez vous à mysql et les copier les commandes suivants:
 
 Créer la base de données: 
 
