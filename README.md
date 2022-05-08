@@ -32,3 +32,13 @@ text_reponse varchar(255), primary key (reponse_id), foreign key (question_id) r
 Ensuite taper ceci dans votre navigateur: 
 
 ``localhost/studyForm/``
+
+## Routes
+
+Routes                | Utilités
+--------------------- | -------------
+index.html            | Page d'accueille
+create_question.html  | Créer une question
+read.php              |  Liste des questions
+detail.php            | Pour voir la description de la question et ses réponses
+
