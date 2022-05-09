@@ -1,8 +1,21 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/detail.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- back end -->
+    <?php
 include 'config.php';
 
 session_start();
-$text_reponse ='';
 
 if (isset($_GET['id_question']) ) {
     // display data from table question
@@ -20,9 +33,10 @@ if (isset($_GET['id_question']) ) {
     else 
         {
         $text_reponse = htmlspecialchars($_POST['text']);
+        $req = $bd->exec("INSERT INTO `reponse` (`question_id`, `text_reponse`) VALUES ('".$_GET['id_question']."', '$text_reponse')");
     }
 
-    $req = $bd->exec("INSERT INTO `reponse` (`question_id`, `text_reponse`) VALUES ('".$_GET['id_question']."', '$text_reponse')");
+    
     if (!$req) {
         echo 'Error';
     }
@@ -34,23 +48,47 @@ else {
 $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."'";
 ?>
 
+    <!-- end back -->
 
-<!-- side client -->
-<div> <?=$question['title_question']?> </div>
-<p><?=$question['text_question']?> </p>
+    <header>
+        <nav>
+            <a href="">home</a>
+        </nav>
 
-<?php foreach ($bd->query($response) as $reponse): ?>
+        <nav class="right">
+            <a href="create_question.html">posez une question</a>
+            <a href="">questions</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2><?=$question['title_question']?></h2>
+            <hr>
+            <p><?=$question['text_question']?> </p>
+        </div>
 
-<p><?=$reponse['text_reponse']?></p>
+        <?php foreach ($bd->query($response) as $reponse): ?>
+        <div style="width: 70%;">
+            <p style="font-size:24px ;">Reponses</p>
+            <p class="reponse"><?=$reponse['text_reponse']?></p>
+        </div>
 
-<?php endforeach; ?>
 
-<div class="content update">
-    <form action="detail.php?id_question=<?=$question['id_question']?>" method="post">     
-        <label for="text">Text reponse</label>
-        <textarea name="text" id="text"  >
+        <?php endforeach; ?>
+        <hr>
+        <form action="detail.php?id_question=<?=$question['id_question']?>" method="post">
+            <!-- <label for="text">Text reponse</label> -->
+            <textarea name="text" id="text">
+                repondre
         </textarea>
 
-        <input type="submit" value="Create">
-    </form>
-</div>
+            <input type="submit" value="Create">
+        </form>
+
+    </div>
+</body>
+
+</html>
+
+
+<!-- side client -->
