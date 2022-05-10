@@ -46,11 +46,9 @@ a{
     border-radius: 10px;
     margin: auto;
 } 
-.img{
-    width: 50%;
-    height: 80%;
-    background-image: url('/images/img.jpg');
-    background-size: cover;
+img{
+    width: 110%;
+    height: 112%;
 }
 
 div{
@@ -58,11 +56,9 @@ div{
     /* width: 100%; */
 }
 
-nav{
-    margin-right: auto;
-}
-.right{
-    margin-left: 70%;
+header{
+    display: flex;
+    justify-content: space-between;
 }
 footer{
     background: #1B4F72;

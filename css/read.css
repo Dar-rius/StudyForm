@@ -5,19 +5,53 @@ body{
     align-items: center;
     justify-content: center; */
     margin: 0px;
-    background: #ABB2B9;
+    background: #ebf1f7;
 }
 
 header{
-    background: #EDBB99;
+    background: #1B4F72;
     display: flex;
     justify-content: center;
     align-items: center;
     align-items: stretch;
-    
+
     padding: 24px;
 }
 
 nav{
     margin: auto;
+}
+
+a{
+    font-size: 20px;
+    margin: 10px;
+    color: rgb(248, 239, 239);
+    text-decoration: none;
+}
+
+.right{
+    margin-left: 70%;
+}
+
+.container{
+    font-size: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 70%;
+    min-height: 100px;
+    background: rgba(27,79,114,0.31);
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+p{
+    color: black;
 }
