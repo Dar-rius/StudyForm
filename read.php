@@ -20,23 +20,25 @@
         </nav>
     </header>
     <?php
-include 'config.php';
+    include 'config.php';
 
-$requete = 'SELECT * FROM question';?>
-
-
+    $requete = 'SELECT * FROM question';
+    ?>
+<div class="container">
+    <p>Trouver la  question qui  vous interesse</p>
     <!-- side client -->
-    <?php foreach($bd->query($requete) as $row): ?>
+    <?php foreach ($bd->query($requete) as $row): ?>
 
-    <div class="container">
-        <div class="card">
-            <a href="detail.php?id_question=<?=$row['id_question']?>">
-            <p><?=$row['text_question']?></p>
-            </a>
+        <a href="detail.php?id_question=<?= $row['id_question'] ?>"  class="card">
+      
+            
+            <p><?= $row['text_question'] ?></p>
+           
 
-        </div>
-    </div>
+      
+        </a>
     <?php endforeach; ?>
+    </div>
 </body>
 
 </html>

@@ -1,16 +1,8 @@
 body{
     height: 100vh;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     margin: 0px;
     font-family: Helvetica;
     background-color: #F1EFF4;
-}
-
-p{
-    font-weight: bold;
 }
 
 header{
@@ -29,13 +21,15 @@ a{
     text-decoration: none;
 }
 
+p{
+    font-weight: bold;
+}
+
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
-    height: 55%;
-    gap: 20px;
     margin-bottom: 6.4%;
 
 }
@@ -59,10 +53,7 @@ img{
     height: 114%;
 }
 
-div{
-    height: 100%;
-    /* width: 100%; */
-}
+
 
 header{
     display: flex;
@@ -70,7 +61,7 @@ header{
 }
 footer{
     background: #1B4F72;
-    padding: 1.4%;
+    padding: 2%;
     min-height: 1%;
     display: flex;
     flex-direction: column;

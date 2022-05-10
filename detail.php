@@ -61,7 +61,10 @@ $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."
             <hr>
             <p><?=$question['text_question']?> </p>
         </div>
-        <p style="font-size:24px ;">Reponses</p>
+        <div class="rep">
+        <p>Reponses</p>
+        </div>
+        
         <?php foreach ($bd->query($response) as $reponse): ?>
         <div style="width: 70%;">
 

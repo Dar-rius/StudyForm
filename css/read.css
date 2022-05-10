@@ -48,10 +48,20 @@ a{
     min-height: 100px;
     background: rgba(27,79,114,0.31);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 p{
     color: black;
+}
+
+.container p{
+    text-align: left;
+    width: 70%;
+    font-weight: bold;
 }
