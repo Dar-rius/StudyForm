@@ -10,21 +10,34 @@
 </head>
 
 <body>
-    <div class="container">
-        <h2>Nouvelle question</h2>
-        <hr>
-        <form action="create_question.php" method="post">
-            <label for="title">Titre de la question</label>
-            <input type="text" name="title" id="title">
+    <header>
+        <nav>
+            <a href="">Home</a>
+        </nav>
 
-            <label class="big-M" for="text">Description de la question</label>
-            <textarea name="text" id="text">
-
-            </textarea>
-
-            <input type="submit" value="Create">
-        </form>
+        <nav class="right">
+            <a href="create_question.html">Posez une question</a>
+            <a href="./read.php">Questions</a>
+        </nav>
+    </header>
+    <div class="center">
+        <div class="container">
+            <h2>Nouvelle question</h2>
+            <hr>
+            <form action="create_question.php" method="post">
+                <label for="title">Sujet</label>
+                <input type="text" name="title" id="title">
+    
+                <label class="big-M" for="text">Description</label>
+                <textarea name="text" id="text">
+    
+                </textarea>
+    
+                <input type="submit" value="Create">
+            </form>
+        </div>
     </div>
+    
 </body>
 
 </html>
