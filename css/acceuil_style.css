@@ -5,7 +5,6 @@ body{
     align-items: center;
     justify-content: center; */
     margin: 0px;
-    background: #ffffff;
     font-family: Helvetica;
     background-color: #F1EFF4;
 }
@@ -52,6 +51,7 @@ a{
     box-sizing : border-box;
     border-radius: 10px;
     margin: auto;
+    color: white;
 } 
 
 img{
