@@ -36,9 +36,9 @@ if (isset($_GET['id_question']) ) {
         $req = $bd->exec("INSERT INTO `reponse` (`question_id`, `text_reponse`) VALUES ('".$_GET['id_question']."', '$text_reponse')");
     }
 
-    
+    error_reporting(E_ERROR | E_PARSE);
     if (!$req) {
-        echo 'Error';
+        // continue;
     }
 }
 else {
@@ -66,10 +66,10 @@ $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."
             <hr>
             <p><?=$question['text_question']?> </p>
         </div>
-
+        <p style="font-size:24px ;">Reponses</p>
         <?php foreach ($bd->query($response) as $reponse): ?>
         <div style="width: 70%;">
-            <p style="font-size:24px ;">Reponses</p>
+
             <p class="reponse"><?=$reponse['text_reponse']?></p>
         </div>
 
@@ -79,7 +79,7 @@ $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."
         <form action="detail.php?id_question=<?=$question['id_question']?>" method="post">
             <!-- <label for="text">Text reponse</label> -->
             <textarea name="text" id="text">
-                repondre
+
         </textarea>
 
             <input type="submit" value="Create">
