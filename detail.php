@@ -28,13 +28,6 @@ if (isset($_GET['id_question']) ) {
 
     error_reporting(E_ERROR | E_PARSE);
 
-    //insert data for table "reponse"
-    $text_reponse = htmlspecialchars($_POST['text']);
-    $req = $bd->exec("INSERT INTO `reponse` (`question_id`, `text_reponse`) VALUES ('".$_GET['id_question']."', '$text_reponse')");
-
-    if (!$req) {
-        // continue;
-    }
 }
 else {
     exit('Not found');
@@ -47,12 +40,12 @@ $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."
 
     <header>
         <nav>
-            <a href="./index.html">home</a>
+            <a href="./index.html">Home</a>
         </nav>
 
         <nav class="right">
-            <a href="./create_question.html">posez une question</a>
-            <a href="./read.php">questions</a>
+            <a href="./create_question.html">Posez une question</a>
+            <a href="./read.php">Questions</a>
         </nav>
     </header>
     <div class="container">
@@ -74,11 +67,9 @@ $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."
 
         <?php endforeach; ?>
         <hr>
-        <form action="detail.php?id_question=<?=$question['id_question']?>" method="post">
+        <form action="detailConfig.php?id_question=<?=$question['id_question']?>" method="post">
             <!-- <label for="text">Text reponse</label> -->
-            <textarea name="text" id="text" required>
-
-        </textarea>
+            <textarea name="text" required id="text" ></textarea>
 
             <input type="submit" value="Create" >
         </form>
@@ -87,6 +78,3 @@ $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."
 </body>
 
 </html>
-
-
-<!-- side client -->

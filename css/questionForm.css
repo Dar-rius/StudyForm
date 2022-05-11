@@ -1,10 +1,10 @@
-
-
 body{
+    height: 100vh;
+    margin: 0px;
     background-color: #F1EFF4;
     font-family: Helvetica;
-
 }
+
 nav{
     margin-right: auto;
 }

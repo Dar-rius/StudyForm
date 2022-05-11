@@ -12,11 +12,11 @@
 <body>
     <header>
         <nav>
-            <a href="./index.html">home</a>
+            <a href="./index.html">Home</a>
         </nav>
 
         <nav class="right">
-            <a href="./create_question.html">posez une question</a>
+            <a href="./create_question.html">Posez une question</a>
         </nav>
     </header>
     <?php
@@ -24,20 +24,16 @@
 
     $requete = 'SELECT * FROM question';
     ?>
-<div class="container">
-    <p>Trouver la  question qui  vous interesse</p>
-    <!-- side client -->
-    <?php foreach ($bd->query($requete) as $row): ?>
 
-        <a href="detail.php?id_question=<?= $row['id_question'] ?>"  class="card">
-      
-            
-            <p><?= $row['text_question'] ?></p>
-           
+    <div class="container">
+        <p>Trouver la  question qui  vous interesse</p>
+        <!-- side client -->
+        <?php foreach ($bd->query($requete) as $row): ?>
 
-      
-        </a>
-    <?php endforeach; ?>
+            <a href="detail.php?id_question=<?= $row['id_question'] ?>"  class="card"> 
+                <p><?= $row['title_question'] ?></p>
+            </a>
+        <?php endforeach; ?>
     </div>
 </body>
 

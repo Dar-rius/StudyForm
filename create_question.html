@@ -16,7 +16,6 @@
         </nav>
 
         <nav class="right">
-            <a href="create_question.html">Posez une question</a>
             <a href="./read.php">Questions</a>
         </nav>
     </header>
@@ -26,10 +25,10 @@
             <hr>
             <form action="create_question.php" method="post">
                 <label for="title">Sujet</label>
-                <input type="text" name="title" id="title">
+                <input type="text" name="title" required id="title">
     
                 <label class="big-M" for="text">Description</label>
-                <textarea name="text" id="text">
+                <textarea name="text" required id="text">
     
                 </textarea>
     

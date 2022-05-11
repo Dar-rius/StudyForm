@@ -6,7 +6,7 @@ body{
     justify-content: center; */
     font-family: Helvetica;
     margin: 0px;
-    background: #ffffff;
+    background: #F1EFF4;
 }
 header{
     background: #1B4F72;
@@ -18,7 +18,7 @@ header{
     padding: 24px;
 }
 a{
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px;
     color: white;
     text-decoration: none;
@@ -67,7 +67,6 @@ hr{
     padding: 12px;
     border-radius: 10px;
     width: 70%;
-    font-size: 24px;
 }
 
 textarea{
@@ -91,8 +90,11 @@ input{
     border: none;
     color: #ffffff;
     border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 p{
     font-weight: bold;
 }
+
