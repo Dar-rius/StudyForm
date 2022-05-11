@@ -89,6 +89,7 @@ textarea{
     margin-bottom: 40px;
     color: rgb(26, 24, 24);
     padding-left: 10px;
+    font-size: 19px;
 }
 
 .big-M{
@@ -96,9 +97,9 @@ textarea{
     /* margin-bottom: 30px; */
 }
 
-input[type="submit"]{
+.create{
     background: #1B4F72;
-    color: #ABB2B9;
+    color: white;
     padding: 10px 10px;
     border-radius: 2px;
     max-width: 150px;
