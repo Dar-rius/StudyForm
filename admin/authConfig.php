@@ -15,7 +15,7 @@ $count = $statement->rowCount();
 if($count > 0)  
 {  
         $_SESSION["adminName"] = $_POST["adminName"];  
-        header("location: ../read.php");  
+        header("location: ./admin.php");  
 }  
 else  
 {  
