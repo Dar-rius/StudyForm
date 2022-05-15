@@ -9,15 +9,9 @@ body{
 header{
     background: #1B4F72;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: stretch;
-
+    justify-content: space-between;
     padding: 24px;
-}
-
-nav{
-    margin: auto;
+    margin-bottom: 2.5%;
 }
 
 a{
@@ -25,10 +19,6 @@ a{
     margin: 10px;
     color: rgb(248, 239, 239);
     text-decoration: none;
-}
-
-.right{
-    margin-left: 70%;
 }
 
 .container{
@@ -42,7 +32,7 @@ a{
 }
 
 .card{
-    width: 70%;
+    width: 98%;
     min-height: 90px;
     background: #2E86C1;
     border: none;
@@ -61,10 +51,37 @@ a{
 
 .container .para2{
     text-align: left;
-    width: 70%;
+    width: 98%;
     font-weight: bold;
 }
 
 .nas{
     font-weight: bold;
+}
+
+@media screen and (max-width: 800px){
+    a, .container{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 18px;
+
+    }
+}
+
+@media screen and (max-width: 490px){
+
+    a{
+        font-size: 16px;
+
+    }
+}
+
+@media screen and (max-width: 295px){
+
+    a{
+        font-size: 14px;
+
+    }
 }

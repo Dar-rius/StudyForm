@@ -1,8 +1,10 @@
 body{
-    
+    height: 100vh;
+    margin: 0px;
+    background-color: #F1EFF4;
+    font-family: Helvetica;
     background-color: #283747;
     color: #283747;
-    font-family: Helvetica;
 
 }
 
@@ -45,8 +47,60 @@ input[type=submit] {
     cursor: pointer;
     width: 100%;
 }
+
 input[type=submit]:hover {
     background-color: white;
     color: #2E86C1;
     border: 1px solid #2E86C1;
+}
+
+@media screen and (max-width: 1130px){
+    #container{
+        width: 50%;
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    #container{
+        width: 60%;
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #container{
+        width: 70%;
+        margin-top: 30%;
+    }
+
+    label, input{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 490px){
+
+    #container{
+        width: 85%;
+        margin-top: 35%;
+    }
+
+    label, input{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 295px){
+
+    #container{
+        width: 95%;
+    }
+
+    label, input{
+        font-size: 14px;
+    }
+    
 }

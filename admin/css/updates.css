@@ -105,3 +105,61 @@ textarea{
     color: #2E86C1;
     border: 1px solid #2E86C1;
 }
+
+@media screen and (max-width: 1130px){
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .container{
+        width: 60%;
+    }
+
+    header{
+        margin-bottom: 12%;
+
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 70%;
+    }
+
+    a, label, input, textarea{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    header{
+        margin-bottom: 17.5%;
+    }
+
+    .container{
+        width: 85%;
+    }
+
+    a, label, input, textarea{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 295px){
+    header{
+        margin-bottom: 20.5%;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    a, label, input, textarea{
+        font-size: 14px;
+    }
+    
+}
