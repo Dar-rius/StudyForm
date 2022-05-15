@@ -26,7 +26,7 @@
     ?>
 
     <div class="container">
-        <p class="para2">Trouver la  question qui  vous interesse</p>
+        <p class="para2">Trouver la  question qui  vous intéresse</p>
         <!-- side client -->
         <?php foreach ($bd->query($requete) as $row): ?>
 

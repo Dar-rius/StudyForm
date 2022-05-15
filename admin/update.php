@@ -30,7 +30,7 @@ if (isset($_GET['id_question'])) {
 <body>
     <header>
         <nav>
-            <a href="./index.html">Home</a>
+            <a href="../index.html">Home</a>
         </nav>
 
         <nav>

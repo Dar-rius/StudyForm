@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <a href="./index.html" class="home">Home</a>
+            <a href="../index.html" class="home">Home</a>
         </nav>
     </header>
     <?php
