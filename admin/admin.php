@@ -6,17 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/admins.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="./index.html">Home</a>
-        </nav>
-
-        <nav class="right">
-            <a href="./create_question.html">Posez une question</a>
+            <a href="./index.html" class="home">Home</a>
         </nav>
     </header>
     <?php
@@ -25,20 +21,24 @@
     $requete = 'SELECT * FROM question';
     ?>
 
+        <p class="text">Effectuer les changements</p>
+
     <div class="container">
-        <p>Trouver la  question qui  vous interesse</p>
-        <!-- side client -->
         <?php foreach ($bd->query($requete) as $row): ?>
 
-            <a href="../detail.php?id_question=<?= $row['id_question'] ?>"  class="card"> 
-                <p><?= $row['title_question'] ?></p>
-                <a href="update.php?id_question=<?= $row['id_question'] ?>">
-                    <p>Modifier</p>
+            <div  class="card">
+                <a href="../detail.php?id_question=<?= $row['id_question'] ?>" > 
+                    <p><?= $row['title_question'] ?></p>
                 </a>
-                <a href="delete.php?id_question=<?= $row['id_question'] ?>">
-                    <p>Supprimer</p>
-                </a>
-            </a>
+                <div class="admini">
+                    <a href="update.php?id_question=<?= $row['id_question'] ?>">
+                        <p>Modifier</p>
+                    </a>
+                    <a href="delete.php?id_question=<?= $row['id_question'] ?>&confirm=yes">
+                        <p>Supprimer</p>
+                    </a>
+                </div>
+            </div>
         <?php endforeach; ?>
     </div>
 </body>

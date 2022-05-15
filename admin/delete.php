@@ -18,31 +18,13 @@ if (isset($_GET['id_question'])) {
 
             $stmt = $bd->prepare('DELETE FROM question WHERE id_question = ?');
             $stmt->execute([$_GET['id_question']]);
+            header('Location: admin.php');
         } else {
             // User clicked the "No" button, redirect them back to the read page
-            header('Location: admin.php');
-            exit;
+            exit('Impossible de supprimer la question');
         }
     }
 } else {
     exit('La question est introuvable');
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="content delete">
-    <h2>Suprimer la question <?=$question['title_question']?></h2>
-    <div class="yesno">
-        <a href="delete.php?id_question=<?=$question['id_question']?>&confirm=yes">Supprimer</a>
-    </div>
-    </div>
-</body>
-</html>

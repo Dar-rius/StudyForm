@@ -18,17 +18,42 @@ if (isset($_GET['id_question'])) {
 
 
 <!-- side client -->
-<div >
-	<h2>Update</h2>
-    <form action="updateConfig.php?id_question=<?=$question['id_question']?>" method="post">
-        <label for="title">Title question</label>
-        <input type="text" name="title" id="title" value= "<?= $question['title_question'] ?>" >
-        
-        <label for="text">Text question</label>
-        <textarea name="text" id="text"  >
-        <?= $question['text_question'] ?>
-        </textarea>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/update.css">
 
-        <input type="submit" value="Create">
-    </form>
-</div>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a>
+        </nav>
+
+        <nav>
+            <a href="./admin.php">Questions</a>
+        </nav>
+    </header>
+    <div class="center">
+        <div class="container">
+            <h2>Modifiez la question</h2>
+            <form action="updateConfig.php?id_question=<?=$question['id_question']?>" method="post">
+                <label for="title">Sujet</label>
+                <input type="text" name="title" id="title" value= "<?= $question['title_question'] ?>" >
+                
+                <label class="big-M" for="text">Description</label>
+                <textarea 
+                    maxlength="700"
+                    name="text" required id="text" >
+                    <?= $question['text_question'] ?>
+                </textarea>
+
+                <input type="submit" value="Changer" class="create">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

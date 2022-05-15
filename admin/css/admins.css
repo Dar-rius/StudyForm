@@ -7,23 +7,27 @@ body{
 
 header{
     background: #1B4F72;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: stretch;
-
     padding: 24px;
+
 }
 
 nav{
     margin: auto;
 }
 
+.home{
+    margin-left: 3%;
+    font-weight: bold;
+
+
+}
+
 a{
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px;
-    color: rgb(248, 239, 239);
+    color: white;
     text-decoration: none;
+
 }
 
 .right{
@@ -31,13 +35,16 @@ a{
 }
 
 .container{
-    font-size: 20px;
-    padding: 24px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+}
+
+.admini{
+    display: flex;
 }
 
 .card{
@@ -46,19 +53,17 @@ a{
     background: rgba(27,79,114,0.31);
     border: none;
     border-radius: 5px;
-    padding-left: 10px;
     margin-top: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 p{
     color: black;
 }
 
-.container p{
-    text-align: left;
-    width: 70%;
+.text{
+    font-size: 20px;
+    margin-left: 3%;
     font-weight: bold;
 }
