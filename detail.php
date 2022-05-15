@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/detail_styles.css">
     <title>Document</title>
 </head>
 
@@ -48,30 +48,31 @@ $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."
             <a href="./read.php">Questions</a>
         </nav>
     </header>
+
     <div class="container">
         <div class="card">
             <h2><?=$question['title_question']?></h2>
-            <hr>
             <p><?=$question['text_question']?> </p>
         </div>
+
         <div class="rep">
-        <p>Reponses</p>
+            <p>Reponses</p>
         </div>
         
         <?php foreach ($bd->query($response) as $reponse): ?>
-        <div style="width: 70%;">
-
-            <p class="reponse"><?=$reponse['text_reponse']?></p>
-        </div>
-
-
+            <div style="width: 70%;">
+                <p class="reponse"><?=$reponse['text_reponse']?></p>
+            </div>
         <?php endforeach; ?>
-        <hr>
+        
         <form action="detailConfig.php?id_question=<?=$question['id_question']?>" method="post">
             <!-- <label for="text">Text reponse</label> -->
-            <textarea name="text" required id="text" ></textarea>
-
-            <input type="submit" value="Create" >
+            <textarea 
+                name="textReponse" 
+                id="text"
+                required>
+            </textarea>
+            <input type="submit" value="Repondre" >
         </form>
 
     </div>

@@ -1,0 +1,53 @@
+body{
+    
+    font-family: Helvetica;
+
+}
+
+
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+
+  }
+
+  .content {
+    color: #f1f1f1;
+    text-align: center;
+    margin-top: 20%;
+    word-spacing: 1%;
+    font-size: large;
+    font-weight: 600;
+    padding-left: 20%;
+    padding-right: 20%;
+
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: auto;
+  }
+
+  a{
+    text-decoration: none;
+    color: #E68D22;
+    font-size: 22px;
+  }
+
+  a:hover{
+    color: #2E86C1;
+  }
+
+  span{
+    color: #5DADE2;
+  }

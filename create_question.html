@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/questionForm.css">
+    <link rel="stylesheet" href="./css/create_question_styles.css">
 </head>
 
 <body>
@@ -22,17 +22,18 @@
     <div class="center">
         <div class="container">
             <h2>Nouvelle question</h2>
-            <hr>
             <form action="create_question.php" method="post">
                 <label for="title">Sujet</label>
-                <input type="text" name="title" required id="title">
+                <input type="text" name="title" required id="title" placeholder="Donnez le theme de votre question">
     
                 <label class="big-M" for="text">Description</label>
-                <textarea name="text" required id="text">
+                <textarea 
+                maxlength="700"
+                name="text" required id="text">
     
                 </textarea>
     
-                <input type="submit" value="Create" class="create">
+                <input type="submit" value="Poser" class="create">
             </form>
         </div>
     </div>
