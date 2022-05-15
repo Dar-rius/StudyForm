@@ -7,20 +7,10 @@ body{
     color: #283747;
 }
 
-nav{
-    margin-right: auto;
-}
-.right{
-    margin-left: 70%;
-}
-
-
 header{
     background: #1B4F72;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: stretch;
+    justify-content: space-between;
     padding: 24px;
     margin-bottom: 2.5%;
 }
@@ -35,10 +25,10 @@ a{
 
 .container{
     display: flexbox;
-    padding: 0px 24px;
+    padding: 2%;
     background: white;
     height: 78%;
-    width: 40%;
+    width: 45%;
     box-sizing: border-box;
     border-radius: 2px;
     justify-content: center;
@@ -114,11 +104,60 @@ textarea{
     border: 1px solid #2E86C1;
 }
 
-header{
-    background: #1B4F72;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-items: stretch;
-    padding: 24px;
+@media screen and (max-width: 1130px){
+    .container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .container{
+        width: 60%;
+    }
+
+    header{
+        margin-bottom: 20.5%;
+
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 70%;
+    }
+
+    a, label, input, textarea{
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 490px){
+    header{
+        margin-bottom: 22.5%;
+    }
+
+    .container{
+        width: 85%;
+    }
+
+    a, label, input, textarea{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 295px){
+    header{
+        margin-bottom: 22.5%;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    a, label, input, textarea{
+        font-size: 14px;
+    }
+    
 }

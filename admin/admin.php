@@ -1,3 +1,6 @@
+<!-- La page pernettant a l'admin d'effectuer des modif sur la 
+    les donnees enregistrer -->
+
 <!DOCTYPE html>
 <html lang="en">
 

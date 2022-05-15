@@ -1,3 +1,5 @@
+<!-- side serveur pour la page upade -->
+
 <?php
 include '../config.php';
 

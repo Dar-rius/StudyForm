@@ -1,19 +1,23 @@
+<!-- Page pour mettre a jour les donnees-->
+
 <?php
-include '../config.php';
+    /* importation du fichier de connexion vers la base de
+     Donnee */
+    include '../config.php';
 
-if (isset($_GET['id_question'])) {
+    /* Une condition permettant de retrouver l'id de la question afin de 
+     voir son contenu */
+    if (isset($_GET['id_question'])) {
+        $stmt = $bd->prepare('SELECT * FROM question WHERE id_question = ?');
+        $stmt->execute([$_GET['id_question']]);
 
-    // Get the question from the questions table
-    $stmt = $bd->prepare('SELECT * FROM question WHERE id_question = ?');
-    $stmt->execute([$_GET['id_question']]);
-
-    $question = $stmt->fetch(PDO::FETCH_ASSOC);
-    if (!$question) {
-        exit('Impossible de mettre a jour');
+        $question = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$question) {
+            exit('Impossible de mettre a jour');
+        }
+    } else {
+        exit('La Question n\'existe pas');
     }
-} else {
-    exit('La Question n\'existe pas');
-}
 ?>
 
 

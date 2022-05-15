@@ -1,5 +1,12 @@
+<!-- cote serveur de la page create_question -->
+
 <?php
+
+    /* importation du fichier de connexion vers la base de
+     Donnee */
+    include 'config.php';
     
+    /*Lorsque la requete est passer */
     if (isset($_POST['title']) && isset($_POST['text'])) 
         {
         $title = htmlspecialchars($_POST['title']);
@@ -9,7 +16,6 @@
         echo "Veuillez remplir tous les champs";
     }
 
-    include 'config.php';
 
     $req = $bd->exec("INSERT INTO `question` (`title_question`, `text_question`) VALUES ('$title', '$text')");
     if ($req) {

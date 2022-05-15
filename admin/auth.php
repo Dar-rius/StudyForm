@@ -1,3 +1,5 @@
+<!-- page pour auth l'admin -->
+
 <html>
     <head>
        <meta charset="utf-8">

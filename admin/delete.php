@@ -1,3 +1,5 @@
+<!-- Cote serveur pour supprimer les donnees-->
+
 <?php
 include '../config.php';
 
