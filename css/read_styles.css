@@ -2,12 +2,12 @@ body{
     height: 100vh;
     margin: 0px;
     font-family: Helvetica;
-    background-color: #F1EFF4;
     
+    background: rgb(157,57,57);
+    background: linear-gradient(90deg, rgba(157,57,57,1) 0%, rgba(18,95,144,1) 100%);
 }
 
 header{
-    background: #1B4F72;
     display: flex;
     justify-content: space-between;
     padding: 24px;
@@ -19,6 +19,10 @@ a{
     margin: 10px;
     color: rgb(248, 239, 239);
     text-decoration: none;
+}
+
+.nas:hover{
+    color: rgb(34,193,195);;
 }
 
 .container{
@@ -42,6 +46,8 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: rgb(111,155,204);
+background: linear-gradient(90deg, rgba(111,155,204,1) 0%, rgba(18,143,144,1) 97%);
 }
 
 .para{
@@ -53,6 +59,7 @@ a{
     text-align: left;
     width: 98%;
     font-weight: bold;
+    color: white;
 }
 
 .nas{

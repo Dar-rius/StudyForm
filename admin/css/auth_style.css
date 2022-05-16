@@ -1,9 +1,7 @@
 body{
-    height: 100vh;
     margin: 0px;
-    background-color: #F1EFF4;
-    font-family: Helvetica;
-    background-color: #283747;
+    background: rgb(157,57,57);
+    background: linear-gradient(90deg, rgba(157,57,57,1) 0%, rgba(18,95,144,1) 100%);    font-family: Helvetica;
     color: #283747;
 
 }
@@ -20,11 +18,18 @@ form {
     border: 1px solid #f1f1f1;
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    background: rgba(255, 255, 255, 0.38);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 #container h1{
     width: 38%;
     margin: 0 auto;
     padding-bottom: 10px;
+    
 }
 
 /* Full-width inputs */
@@ -39,7 +44,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 input[type=submit] {
-    background-color: #2E86C1;
+    background: rgb(34,193,195);;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

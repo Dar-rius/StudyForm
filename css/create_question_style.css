@@ -1,14 +1,13 @@
 body{
     height: 100vh;
     margin: 0px;
-    background-color: #F1EFF4;
+    background: rgb(157,57,57);
+    background: linear-gradient(90deg, rgba(157,57,57,1) 0%, rgba(18,95,144,1) 100%);
     font-family: Helvetica;
-    background-color: #283747;
     color: #283747;
 }
 
 header{
-    background: #1B4F72;
     display: flex;
     justify-content: space-between;
     padding: 24px;
@@ -23,10 +22,13 @@ a{
     font-weight: bold;
 }
 
+a:hover{
+    color: rgb(34,193,195);;
+}
+
 .container{
     display: flexbox;
     padding: 2%;
-    background: white;
     height: 78%;
     width: 45%;
     box-sizing: border-box;
@@ -35,6 +37,13 @@ a{
     padding-top: 2%;
     margin-bottom: 2%;
     padding-bottom: 3%;
+    
+    background: rgba(255, 255, 255, 0.38);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .center{
@@ -90,7 +99,7 @@ textarea{
 }
 
 .create{
-    background: #2E86C1;
+    background: rgb(34,193,195);;
     color: white;
     border-radius: 5px;
     max-width: 150px;
@@ -100,8 +109,8 @@ textarea{
 
 .create:hover {
     background-color: white;
-    color: #2E86C1;
-    border: 1px solid #2E86C1;
+    color: rgb(34,193,195);;
+    border: 1px solid rgb(34,193,195);
 }
 
 @media screen and (max-width: 1130px){

@@ -1,17 +1,13 @@
 body{
     height: 100vh;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+    
     font-family: Helvetica;
     margin: 0px;
-    background: #F1EFF4;
-    color: #283747;
-
+    background: rgb(157,57,57);
+    background: linear-gradient(90deg, rgba(157,57,57,1) 0%, rgba(18,95,144,1) 100%);
+    color: white;
 }
 header{
-    background: #1B4F72;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +21,10 @@ a{
     text-decoration: none;
     font-weight: bold;
 
+}
+
+a:hover{
+    color: rgb(34,193,195);;
 }
 
 .right{
@@ -68,6 +68,8 @@ a{
     border-radius: 10px;
     font-size: 18px;
     font-weight:none;
+    background: rgb(111,155,204);
+background: linear-gradient(90deg, rgba(111,155,204,1) 0%, rgba(18,143,144,1) 97%);
 }
 
 textarea{
