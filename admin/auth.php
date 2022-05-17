@@ -4,30 +4,24 @@
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="./css/auth_style.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="./css/auth_styles.css" media="screen" type="text/css" />
     </head>
     <body>
-        <div id="container">
-            <!-- zone de connexion -->
-            
-            <form action="authConfig.php" method="post">
+        <div class="center">
+            <div class="container">
+                <!-- zone de connexion -->
                 <h1>Connexion</h1>
-                
-                <label><b>Nom d'utilisateur</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="adminName" required>
+                <form action="authConfig.php" method="post">
+                    
+                    <label>Nom d'utilisateur</label>
+                    <input type="text" placeholder="Entrer le nom d'utilisateur" name="adminName" class="formulaire" required>
 
-                <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                    <label>Mot de passe</label>
+                    <input type="password" placeholder="Entrer le mot de passe" name="password" class="formulaire" required>
 
-                <input type="submit" id='submit' value='LOGIN' >
-                <?php
-                if(isset($_GET['erreur'])){
-                    $err = $_GET['erreur'];
-                    if($err==1 || $err==2)
-                        echo "<p style='color:red'>Utilisateur ou mot de passe incorrect</p>";
-                }
-                ?>
-            </form>
+                    <input type="submit" id='submit' value='LOGIN' >
+                </form>
+            </div>
         </div>
     </body>
 </html>

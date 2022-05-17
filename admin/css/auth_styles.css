@@ -1,23 +1,37 @@
 body{
+    height: 100vh;
     margin: 0px;
     background: rgb(157,57,57);
-    background: linear-gradient(90deg, rgba(157,57,57,1) 0%, rgba(18,95,144,1) 100%);    font-family: Helvetica;
+    background: linear-gradient(90deg, rgba(157,57,57,1) 0%, rgba(18,95,144,1) 100%);
+    font-family: Helvetica;
     color: #283747;
 
 }
 
-#container{
-    width:400px;
-    margin:0 auto;
-    margin-top:10%;
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-/* Bordered form */
-form {
-    width:100%;
-    padding: 30px;
-    border: 1px solid #f1f1f1;
-    background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+h1{
+    text-align: center;
+}
+
+.container{
+    display: flexbox;
+    padding: 2%;
+    height: 78%;
+    width: 45%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    justify-content: center;
+    margin-top: 10%;
+    padding-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+    
     background: rgba(255, 255, 255, 0.38);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -25,15 +39,14 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
-#container h1{
-    width: 38%;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    
+/* Bordered form */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
+.formulaire {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -60,24 +73,24 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 1130px){
-    #container{
+    .container{
         width: 50%;
-        margin-top: 20%;
+        margin-top: 15%;
     }
 }
 
 @media screen and (max-width: 910px){
-    #container{
+    .container{
         width: 60%;
         margin-top: 25%;
     }
 }
 
 @media screen and (max-width: 700px){
-    #container{
+    .container{
         width: 70%;
-        margin-top: 30%;
     }
+    
 
     label, input{
         font-size: 18px;
@@ -87,9 +100,9 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 490px){
 
-    #container{
+    .container{
         width: 85%;
-        margin-top: 35%;
+        margin-top: 45%;
     }
 
     label, input{
@@ -100,7 +113,7 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 295px){
 
-    #container{
+    .container{
         width: 95%;
     }
 
