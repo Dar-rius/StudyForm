@@ -6,6 +6,7 @@ body{
     background: rgb(157,57,57);
     background: linear-gradient(90deg, rgba(157,57,57,1) 0%, rgba(18,95,144,1) 100%);
     color: white;
+    position: fixed;
 }
 header{
     display: flex;
@@ -15,6 +16,7 @@ header{
     margin-bottom: 2.5%;
 }
 a{
+
     font-size: 20px;
     margin: 10px;
     color: white;

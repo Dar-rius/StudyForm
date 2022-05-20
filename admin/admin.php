@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header style="display:flex; justify-content:space-between">
+    <header style="display:flex; justify-content:space-between, align-item:center">
         <nav>
             <a href="../index.html" class="home">Home</a>
         </nav>
