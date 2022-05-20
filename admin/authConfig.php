@@ -27,6 +27,7 @@ session_start();
         }  
         else  
         {  
-                echo '<label>Wrong Data</label>';  
+                $message = "Le nom d'utilisateur ou le mot de passe est incorrecte";
+                header("location: auth.php");
         }  
    

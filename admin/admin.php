@@ -23,8 +23,13 @@
     </header>
     <?php
     include '../config.php';
+    session_start ();
+    if (isset($_SESSION['adminName'])){
+        $requete = 'SELECT * FROM question';
+    }else {
+        header ('location: auth.php');
+    }
 
-    $requete = 'SELECT * FROM question';
     ?>
 
         <p class="text">Effectuer les changements</p>

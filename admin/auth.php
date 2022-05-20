@@ -1,5 +1,7 @@
 <!-- page pour auth l'admin -->
 
+<?php $message= "";?>
+
 <html>
     <head>
        <meta charset="utf-8">
@@ -20,6 +22,7 @@
                     <input type="password" placeholder="Entrer le mot de passe" name="password" class="formulaire" required>
 
                     <input type="submit" id='submit' value='LOGIN' >
+                    <?php echo "<p> ".$message. "</p>"; ?>
                 </form>
             </div>
         </div>
