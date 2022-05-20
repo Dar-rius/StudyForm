@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/detail_style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/detail_styles.css">
 </head>
 
 <body>
 
     <!-- back end -->
     <?php
-include 'config.php';
+include '../config.php';
 
 
 if (isset($_GET['id_question']) ) {
@@ -60,22 +59,10 @@ $response = "SELECT * from reponse WHERE question_id = '".$_GET['id_question']."
         </div>
         
         <?php foreach ($bd->query($response) as $reponse): ?>
-            <div class="reponse">
-                <p><?=$reponse['text_reponse']?></p>
-                <p class="certi"><?=$reponse['reponse_certifi']?></p>
+            <div style="width: 70%;">
+                <p class="reponse"><?=$reponse['text_reponse']?></p>
             </div>
         <?php endforeach; ?>
-        
-        <form action="detailConfig.php?id_question=<?=$question['id_question']?>" method="post">
-            <!-- <label for="text">Text reponse</label> -->
-            <textarea 
-                name="textReponse" 
-                id="text"
-                required>
-            </textarea>
-            <input type="submit" value="Repondre" >
-        </form>
-
     </div>
 </body>
 

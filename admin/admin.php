@@ -13,9 +13,12 @@
 </head>
 
 <body>
-    <header>
+    <header style="display:flex; justify-content:space-between">
         <nav>
             <a href="../index.html" class="home">Home</a>
+        </nav>
+        <nav style="font-weight: bold;">
+            <a href="./display_question.php">certifier une reponse</a>
         </nav>
     </header>
     <?php
@@ -45,5 +48,6 @@
         <?php endforeach; ?>
     </div>
 </body>
+
 
 </html>

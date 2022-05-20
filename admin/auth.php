@@ -4,7 +4,7 @@
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="./css/auth_styles.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="./css/auth_style.css" media="screen" type="text/css" />
     </head>
     <body>
         <div class="center">

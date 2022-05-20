@@ -64,13 +64,14 @@ a:hover{
 
 .reponse{
     margin-top: 20px;
+    width: 70%;
     background: #D5DBDB;
     padding: 12px;
     border-radius: 10px;
     font-size: 18px;
     font-weight:none;
     background: rgb(111,155,204);
-background: linear-gradient(90deg, rgba(111,155,204,1) 0%, rgba(18,143,144,1) 97%);
+    background: linear-gradient(90deg, rgba(111,155,204,1) 0%, rgba(18,143,144,1) 97%);
 }
 
 textarea{
@@ -111,6 +112,11 @@ p{
     font-weight: 600;
 }
 
+.certi{
+    color: aquamarine;
+    font-size: medium;
+}
+
 
 @media screen and (max-width: 710px){
     form{
@@ -127,6 +133,5 @@ p{
     form{
         width:90% ;
     }
-
 
 }
