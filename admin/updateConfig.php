@@ -12,7 +12,9 @@ if (isset($_GET['id_question'])) {
         // Update des donnees 
         $stmt = $bd->prepare('UPDATE question SET title_question = ?, text_question = ? WHERE id_question = ?');
         $stmt->execute([$title, $text, $_GET['id_question']]);
-        header('Location: admin.php');
+        echo '<script>
+                    location.href="admin.php";
+                </script>';
 
     }
 } else {

@@ -20,14 +20,19 @@
 
         /*Si la variable est vide elle retournera le user vers la page
         detail */
+        $id = $question['id_question'];
         if (empty($text_reponse)){
-            header('Location: detail.php?id_question='.$question['id_question']);
+            echo '<script>
+                    location.href="detail.php?id_question='.$id.'"
+                </script>';
         }
         else{
             /*Si non la valeur de la variable est enregistrer */
             $req = $bd->exec("INSERT INTO `reponse` (`question_id`, `text_reponse`) VALUES ('".$_GET['id_question']."', '$text_reponse')");
             if ($req) {
-                header('Location: detail.php?id_question='.$question['id_question']);
+                echo '<script>
+                    location.href="detail.php?id_question='.$id.'"
+                </script>';
             }
         }
 }

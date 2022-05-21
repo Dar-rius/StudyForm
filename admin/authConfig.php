@@ -22,12 +22,16 @@ session_start();
         
         if($count > 0)  
         {  
-                $_SESSION["adminName"] = $_POST["adminName"];  
-                header("location: ./admin.php");  
+                $_SESSION["adminName"] = $_POST["adminName"];
+                echo '<script>
+                    location.href="admin.php";
+                </script>';
         }  
         else  
         {  
                 $message = "Le nom d'utilisateur ou le mot de passe est incorrecte";
-                header("location: auth.php");
+                echo '<script>
+                    location.href="auth.php";
+                </script>';
         }  
    

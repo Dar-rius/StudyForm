@@ -21,7 +21,7 @@
             <a href="./display_question.php">certifier une reponse</a>
         </nav>
     </header>
-    <?php
+<?php
     include '../config.php';
     session_start ();
     if (isset($_SESSION['adminName'])){

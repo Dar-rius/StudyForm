@@ -19,7 +19,9 @@
 
     $req = $bd->exec("INSERT INTO `question` (`title_question`, `text_question`) VALUES ('$title', '$text')");
     if ($req) {
-        header('Location: read.php');
+        echo "<script>
+            window.location.href=' read.php';
+        </script>";
     }
     else {
         echo 'Error!';
